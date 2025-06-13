@@ -27,9 +27,78 @@
         width: 100px;
         font-weight: 400;
         }
+
+        *{
+			margin: 0;
+               padding: 1px;
+               font-family: 'Varela Round', sans-serif;
+          }
+
+              header{
+               display: flex;
+               justify-content: space-around;
+               align-items: center;
+               padding: 10px 0px;
+               border-bottom:  1px solid rgb(12, 12, 14);
+               bottom: 100px;
+
+          }
+
+          li{
+               display: inline-block;
+               padding:  0px 20px;
+               list-style: none;
+     
+          }
+
+
+          .logo{
+               width: 300px;
+               cursor: pointer;
+               
+
+          }
+          a{
+               font-size: 14px;
+               text-decoration: none;
+               text-transform: 700;
+               color: rgb(15, 14, 14);
+               
+          }
+          .btn{
+               padding: 10px 25px;
+               background-color: aqua;
+                background-color: #d84444;
+               color: white;
+               box-shadow: 0 4px 10px rgba(20, 19, 19, 0.1);
+              
+          }
+         .boton-personalizado:hover {
+               background-color: #6d696a;
+                letter-spacing: 1px;
+                border-radius: 5px;
+               box-shadow: 0px 4px 8px 3px rgba(115, 114, 121, 0.5);
+                transition: background-color 2s;
+                 box-shadow: 0px 4px 10px;
+          }
         </style>
 </head>
 <body>
+    <header>
+   <img src="imagenes/convert.png" alt="" class="logo">
+
+    <nav>
+      <li><a href="index.html" class="boton-personalizado">Pagina principal</a></li> 
+      <li><a href="mision.html" class="boton-personalizado">Mision</a></li> 
+      <li><a href="Trasporte y automatización.html" class="boton-personalizado">trasporte y automatizacion</a></li> 
+      <li><a href="horarios2.html" class="boton-personalizado"> Horarios</a></li> 
+      <li><a href="historia.html" class="boton-personalizado">Historia</a></li> 
+
+    </nav>
+
+</header>
+
+
     <h1>Trasporte y automatización</h1>
     <p>Son parte de nuestroplan de ecology project que fomenta nuestra participacion en la  lucha de 0 contaminacion y la limpiesa de aire</p>
     <table>
@@ -81,7 +150,6 @@
     <br>
     <p>Software de ruteo que determina el trayecto más eficiente desde el centro de distribución.</p>
     </center>
-    <br>
-    <a href="../Transurge/index.html">Pagina original</a>
+    
 </body>
 </html>
