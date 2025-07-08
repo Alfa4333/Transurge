@@ -1,125 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horarios y Ubicacion</title>
-    <style>
-    body{
-        background-color: yellow;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horarios y Ubicación | Trans Urge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-dark: #003b8e;
+      --primary: #0057d9;
+      --primary-light: #1e8fff;
+      --accent: #00b4ff;
+      --text: #0f1a2b;
+      --bg: #f5f9ff;
     }
-     *{
-			margin: 0;
-               padding: 1px;
-               font-family: 'Varela Round', sans-serif;
-          }
 
-              header{
-               display: flex;
-               justify-content: space-around;
-               align-items: center;
-               padding: 10px 0px;
-               border-bottom:  1px solid rgb(12, 12, 14);
-               bottom: 100px;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-          }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem 1rem;
+    }
 
-          li{
-               display: inline-block;
-               padding:  0px 20px;
-               list-style: none;
-     
-          }
+    header {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
 
+    header img {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
 
-          .logo{
-               width: 300px;
-               cursor: pointer;
-               
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: .5rem;
+    }
 
-          }
-          a{
-               font-size: 14px;
-               text-decoration: none;
-               text-transform: 700;
-               color: rgb(15, 14, 14);
-               
-          }
-          .btn{
-               padding: 10px 25px;
-               background-color: aqua;
-                background-color: #d84444;
-               color: white;
-               box-shadow: 0 4px 10px rgba(20, 19, 19, 0.1);
-              
-          }
-         .boton-personalizado:hover {
-               background-color: #6d696a;
-                letter-spacing: 1px;
-                border-radius: 5px;
-               box-shadow: 0px 4px 8px 3px rgba(223, 222, 224, 0.5);
-                transition: background-color 2s;
-                 box-shadow: 0px 4px 10px;
-          }
- 
+    .sucursal {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
-          
+    .sucursal h2 {
+      color: var(--primary-dark);
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
 
+    .sucursal p {
+      margin: .3rem 0;
+    }
 
-</style>    
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: .875rem;
+      color: #7a8aa1;
+    }
+
+   nav {
+      background: var(--primary-dark);
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      background: var(--accent);
+      padding: 0.7rem 1rem;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: var(--primary-light);
+}
+  </style>
 </head>
 <body>
-     
-    <header>
-   <img src="imagenes/convert.png" alt="" class="logo">
 
-    <nav>
-      <li><a href="index.html" class="boton-personalizado">Pagina principal</a></li> 
-      <li><a href="mision.html" class="boton-personalizado">Mision</a></li> 
-      <li><a href="Trasporte y automatización.html" class="boton-personalizado">trasporte y automatizacion</a></li> 
-      <li><a href="horarios2.html" class="boton-personalizado"> Horarios</a></li> 
-      <li><a href="historia.html" class="boton-personalizado">Historia</a></li> 
-        <li> <a href="ecological program.html" class="boton-personalizado">Ecological program</a></li>
-        <li> <a href="Servicio.html " class="boton-personalizado">Servicios</a></li>
-    </nav>
+      <!-- ───── NAVIGATION MENU ───── -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">Nuestra Historia</a>
+    <a href="mision.html">Misión y Visión</a>
+    <a href="Trasporte y automatización.html">Transporte y Automatización</a>
+    <a href="horarios2.html">Horarios</a>
+    <a href="ecological program.html">Programa Ecológico</a>
+    <a href="Servicio.html">Servicios</a>
+  </nav>
 
-</header>
-<center>
+  <header>
+     <img src="imagenes/tran.jpg" alt="" width="300">
+    <h1>Sucursales y Horarios</h1>
+    <p>Consulta nuestras ubicaciones a lo largo del país</p>
+  </header>
 
-    <h1>NL</h1>
-<h2>Av Bernardo Reyes 3184, Estrella, 64400 Monterrey, N.L.</h2>
-<h3>De lunes a sabado 9:00 am - 8:00</h3>
-<h4>Telefono: 81-8331-7097</h4>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.9809372058726!2d-100.32994452460149!3d25.705055177387557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866295b898e52261%3A0x4c4aafd1e4e8cfaa!2sTransurge%20Mensajer%C3%ADa%20y%20Paqueter%C3%ADa!5e0!3m2!1ses-419!2smx!4v1747154549395!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<br>
-<br>
-<h2>Saltillo Coahuila</h2>
-<h3>Av. Las Torres 409, Parque Industrial las Torres, 25114 Saltillo, Coah.</h3>
-<h4>Lunes a viernes de 8:00 - 6:00</h4>
-<h5>Telefono:8444342023</h5>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.588608353161!2d-101.01622932460981!3d25.452013877547834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86886d701fa4c381%3A0x9666588810ac4a02!2sTRANS%20URGE!5e0!3m2!1ses-419!2smx!4v1747196480171!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<br>
-<br>
-<h4>Chihuahua</h4>
-<h2>Calle, José Esteban Coronado 2905, Obrera, 31350 Chihuahua, Chih.</h2>
-<h3>Lunes-viernes</h3>
-<h5>+526144109307</h5>
-<h3><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.607843645401!2d-106.06716022449882!3d28.64151317565981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea5cb258195279%3A0x4f3e9de939022d16!2sTransurge!5e0!3m2!1ses-419!2smx!4v1750388105791!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></h3>
-<br>
-<br>
-<h6>Tamalipas</h6>
-<h2>Condor 3149, Primavera, 87134 Cdad. Victoria, Tamps.</h2>
-<h3>Lunes-Viernes:8 - 6</h3>
-<h4>+528343040562</h4>
-<h5><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3792032.7133113826!2d-104.93202351384008!3d21.851481102613327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x867953d1e1d5ca8b%3A0xbf799c53f034552c!2sTransurge!5e0!3m2!1ses-419!2smx!4v1750388479946!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></h5>
-<br>
-<br>
-<h2>Nuevo Laredo</h2>
-<h3>C. Chihuahua 4211, Jesús García (Anáhuac), 88250 Nuevo Laredo, Tamps.</h3>
-<h4>Lunes-Viernes:8-6</h4>
-<h5>+528677151545</h5>
-<h6><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624873.900656581!2d-104.39765488749998!3d27.471876899999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8661224303807629%3A0x4986ac4aa8df296b!2sTransurge%20mensajeria%20y%20paqueteria!5e0!3m2!1ses-419!2smx!4v1750388696149!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>></h6>
-</center>
+  <section class="sucursal">
+    <h2>Monterrey, Nuevo León</h2>
+    <p>📍 Av Bernardo Reyes 3184, Estrella, 64400 Monterrey, N.L.</p>
+    <p>🕒 Lunes a sábado: 9:00 am - 8:00 pm</p>
+    <p>📞 Tel: 81-8331-7097</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.9809372058726!2d-100.32994452460149!3d25.705055177387557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866295b898e52261%3A0x4c4aafd1e4e8cfaa!2sTransurge%20Mensajer%C3%ADa%20y%20Paqueter%C3%ADa!5e0!3m2!1ses-419!2smx!4v1751996648969!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
 
+  <section class="sucursal">
+    <h2>Saltillo, Coahuila</h2>
+    <p>📍 Av. Las Torres 409, Parque Industrial las Torres, 25114 Saltillo, Coah.</p>
+    <p>🕒 Lunes a viernes: 8:00 am - 6:00 pm</p>
+    <p>📞 Tel: 844-434-2023</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.5884633970745!2d-101.01622932554928!3d25.452018721334124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86886d701fa4c381%3A0x9666588810ac4a02!2sTRANS%20URGE!5e0!3m2!1ses-419!2smx!4v1751996712576!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
 
+  <section class="sucursal">
+    <h2>Chihuahua, Chihuahua</h2>
+    <p>📍 José Esteban Coronado 2905, Obrera, 31350 Chihuahua, Chih.</p>
+    <p>🕒 Lunes a viernes</p>
+    <p>📞 Tel: +52 614 410 9307</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.607688295172!2d-106.0691987264966!3d28.64151782989899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea5cb258195279%3A0x4f3e9de939022d16!2sTransurge!5e0!3m2!1ses-419!2smx!4v1751996982620!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section class="sucursal">
+    <h2>Ciudad Victoria, Tamaulipas</h2>
+    <p>📍 Cóndor 3149, Primavera, 87134 Cdad. Victoria, Tamps.</p>
+    <p>🕒 Lunes a viernes: 8:00 am - 6:00 pm</p>
+    <p>📞 Tel: +52 834 304 0562</p>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.693415705509!2d-99.11737892560932!3d23.722639989843362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x867953d1e1d5ca8b%3A0xbf799c53f034552c!2sTransurge!5e0!3m2!1ses-419!2smx!4v1751996792780!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section class="sucursal">
+    <h2>Nuevo Laredo, Tamaulipas</h2>
+    <p>📍 C. Chihuahua 4211, Jesús García (Anáhuac), 88250 Nuevo Laredo, Tamps.</p>
+    <p>🕒 Lunes a viernes: 8:00 am - 6:00 pm</p>
+    <p>📞 Tel: +52 867 715 1545</p>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.915766476977!2d-99.52230012547345!3d27.471881635839203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8661224303807629%3A0x4986ac4aa8df296b!2sTransurge%20mensajeria%20y%20paqueteria!5e0!3m2!1ses-419!2smx!4v1751996899684!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer>
+    &copy; 2025 Trans Urge. Todos los derechos reservados.
+  </footer>
+
+</body>
 </html>

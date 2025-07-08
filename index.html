@@ -1,109 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trasurge</title>
-    <style>
-        body{
-        background-color: rgb(243, 243, 211);
-       }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trans Urge</title>
+  
+  <!-- Google Font for a clean, modern look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-        .boton-personalizado {
-  margin: auto;
-  display: block;
-  width: 40%;
-  background-color: #daa30df6;
-  padding: 1%;
-  text-align: center;
-  color: rgb(25, 23, 23);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: 1px;
-  border-radius: 5px;
-  box-shadow: 0px 4px 8px 3px rgba(15, 15, 15, 0.5);
-  transition: background-color 1s;
-  border: none;
-  cursor: pointer;
-}
-
-.boton-personalizado:hover {
-  background-color: #b4b2ae;
-}
-body {
-      font-family: 'Verdana', sans-serif;
-      color: #444;
+  <style>
+    /* ─── Color Palette extracted from the logo ─────────────────────────────── */
+    :root {
+      --primary-dark: #003b8e; /* Deep navy from the shaded face */
+      --primary:       #0057d9; /* Mid‑blue from the top face  */
+      --primary-light: #1e8fff; /* Accent blue from tagline    */
+      --accent:        #00b4ff; /* Bright cyan for call‑to‑action */
+      --text:          #0f1a2b; /* Near‑black for body text    */
+      --bg:            #f5f9ff; /* Very light blue background  */
     }
 
-    h1 {
-      font-size: 36px;
-      text-align: center;
-      color: rgb(248, 144, 25);
-    }
-
-    p {
-      font-size: 18px;
+    /* ─── Global Reset & Typography ────────────────────────────────────────── */
+    *,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
-      letter-spacing: 1px;
     }
 
-    .resaltado {
-      color: crimson;
-      font-weight: bold;
+    /* ─── Hero Section ─────────────────────────────────────────────────────── */
+    header.hero {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1rem;
     }
-    .container{
-       width: 110%;
-      max-width: 1100px;
-      margin: 0 auto;
+    header.hero img {
+      width: 120px;
+      margin-bottom: 1rem;
+    }
+    header.hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: .5rem;
+      font-weight: 700;
+    }
+    header.hero p {
+      font-size: 1.125rem;
+      letter-spacing: .5px;
     }
 
-    .hero{
-      background: linear-gradient(to right, #f8dc07, #e7e703);
-  color: rgb(19, 18, 18);
-  padding: 100px 0;
-  text-align: center;
-}
-  .hero2{
- background: linear-gradient(to right, #f7f6ef, #dfdfdd);
-  color: rgb(19, 18, 18);
-  padding: 9px 0;
-  text-align: center;
-}
+    /* ─── Navigation Buttons ───────────────────────────────────────────────── */
+    main.menu {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .btn {
+      min-width: 260px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,.15);
+      transition: transform .2s, box-shadow .2s, background .3s;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,.25);
+      background: var(--primary-light);
+    }
 
-
-    </style>
+    /* ─── Footer ───────────────────────────────────────────────────────────── */
+    footer {
+      text-align: center;
+      font-size: .875rem;
+      padding: 2rem 1rem;
+      color: #7a8aa1;
+    }
+  </style>
 </head>
 <body>
-  <section id="inicio" class="hero">
-    <center>
-    <div class="container">
-      <h2>!Bien venido a transurger¡</h2>
-      <p>Conectamos persona no solo paquetes</p>
-    </div>
-    </center>
-  </section>
+  <!-- ─── Hero Section with Logo & Tagline ─────────────────────────────────── -->
+  <header class="hero">
+    <!-- Replace the src with your actual logo path/reference -->
+    <img src="imagenes/tran.jpg" alt="" width="1000">
+    <h1>¡Bienvenido a Trans Urge!</h1>
+    <p>Conectamos personas, no paquetes.</p>
+  </header>
 
-  <section id="inicio" class="hero2">
-    <center>
-    <img src="imagenes/convert.png" alt="56" width="700" >
-    <br>
-     <br>
-     <br>
-   <a href="historia.html" class="boton-personalizado">Nuestra historia </a>
-   <br>
-   <br>
-   <a href="mision.html" class="boton-personalizado">Mision y vision </a>
-   <br>
-   <br>
-   <a href="Trasporte y automatización.html" class="boton-personalizado">Trasporte y automatización</a>
-   <br>
-   <br>
-   <a href="horarios2.html" class="boton-personalizado">Horarios</a>
-   <br>
-   <br>
-   <a href="ecological program.html" class="boton-personalizado">Ecological Program</a>
-   <br>
-   <br>
-   <a href="Servicio.html" class="boton-personalizado">Servicios</a>
-        </center>
-        </section>
+  <!-- ─── Navigation Menu ──────────────────────────────────────────────────── -->
+  <main class="menu">
+    <a href="historia.html"                      class="btn">Nuestra Historia</a>
+    <a href="mision.html"                        class="btn">Misión y Visión</a>
+    <a href="Trasporte y automatización.html"    class="btn">Transporte y Automatización</a>
+    <a href="horarios2.html"                     class="btn">Horarios</a>
+    <a href="ecological program.html"            class="btn">Programa Ecológico</a>
+    <a href="Servicio.html"                      class="btn">Servicios</a>
+  </main>
+
+  <!-- ─── Footer ───────────────────────────────────────────────────────────── -->
+  <footer>
+    &copy; 2025 Trans Urge. Todos los derechos reservados.
+  </footer>
+</body>
 </html>
