@@ -1,177 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trasurge</title>
-    <style>
-    
-        body{
-            background-color: yellow;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transurge</title>
+  <style>
+    /* Colores inspirados en el logo */
+    :root {
+      --azul-oscuro: #002b7f;
+      --azul-claro: #009de0;
+      --fondo-claro: #f9f9f9;
+    }
 
-       *{
-			margin: 0;
-               padding: 1px;
-               font-family: 'Varela Round', sans-serif;
-          }
+    body {
+      background-color: var(--fondo-claro);
+      color: #000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-              header{
-               display: flex;
-               justify-content: space-around;
-               align-items: center;
-               padding: 10px 0px;
-               border-bottom:  1px solid rgb(12, 12, 14);
-               bottom: 100px;
+    header {
+      background-color: var(--azul-oscuro);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      flex-wrap: wrap;
+    }
 
-          }
+    .logo {
+      width: 200px;
+    }
 
-          li{
-               display: inline-block;
-               padding:  0px 20px;
-               list-style: none;
-     
-          }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
 
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 4px;
+      background-color: var(--azul-claro);
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
 
-          .logo{
-               width: 300px;
-               cursor: pointer;
-               
+    nav a:hover {
+      background-color: var(--naranja);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
-          }
-          a{
-               font-size: 14px;
-               text-decoration: none;
-               text-transform: 700;
-               color: rgb(15, 14, 14);
-               
-          }
-          .btn{
-               padding: 10px 25px;
-               background-color: aqua;
-                background-color: #d84444;
-               color: white;
-               box-shadow: 0 4px 10px rgba(20, 19, 19, 0.1);
-              
-          }
-         .boton-personalizado:hover {
-               background-color: #c4bfc0;
-                letter-spacing: 1px;
-                border-radius: 5px;
-               box-shadow: 0px 4px 8px 3px rgba(228, 227, 231, 0.5);
-                transition: background-color 2s;
-                 box-shadow: 0px 4px 10px;
-          }
-                         /* General */
-               body {
-               background-color: #fff200;
-               color: #000000;
-               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-               margin: 0;
-               padding: 0;
-               line-height: 1.6;
-               }
+    h1, h2 {
+      text-align: center;
+      margin: 30px 0 10px;
+    }
 
-               /* Encabezados */
-               h1, h2 {
-               color: #000000;
-               text-align: center;
-               margin-top: 30px;
-               margin-bottom: 10px;
-               }
+    h1 {
+      font-size: 2.2rem;
+      color: var(--azul-oscuro);
+      border-bottom: 2px solid var(--azul-claro);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
 
-               h1 {
-               font-size: 32px;
-               font-weight: bold;
-               border-bottom: 2px solid #000;
-               padding-bottom: 5px;
-               }
+    h2 {
+      color: var(--naranja);
+      font-size: 1.8rem;
+    }
 
-               h2 {
-               font-size: 26px;
-               font-weight: bold;
-               color: #f26522;
-               }
+    p {
+      max-width: 900px;
+      margin: 0 auto 20px;
+      text-align: justify;
+      padding: 0 15px;
+      line-height: 1.6;
+    }
 
-               /* Párrafos */
-               p {
-               max-width: 900px;
-               margin: 0 auto 20px auto;
-               text-align: justify;
-               padding: 0 15px;
-               text-transform: lowercase;
-               }
+    p::first-letter {
+      text-transform: uppercase;
+    }
 
-               p::first-letter {
-               text-transform: uppercase;
-               }
+    .imagenes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin: 40px 0;
+    }
 
+    .imagenes img {
+      width: 300px;
+      border: 2px solid var(--azul-claro);
+      border-radius: 8px;
+    }
 
-
-               nav a {
-               color: #000000;
-               text-decoration: none;
-               font-weight: bold;
-               transition: color 0.3s;
-               }
-
-               nav a:hover {
-               color: #f26522;
-               }
-
-               /* Logo */
-               .logo {
-               display: flex;
-               align-items: center;
-               justify-content: center;
-               padding: 20px;
-               }
-
-               
-
-
-
-
-          
-
-
-
-    </style>
-
+  </style>
 </head>
 <body>
-    <header>
 
-   <img src="imagenes/convert.png" alt="" class="logo">
-
+  <header>
+    <img src="imagenes/tran.jpg" alt="Logo" class="logo" />
     <nav>
-      <li><a href="index.html" class="boton-personalizado">Pagina principal</a></li> 
-      <li><a href="mision.html" class="boton-personalizado">Mision</a></li> 
-      <li><a href="Trasporte y automatización.html" class="boton-personalizado">trasporte y automatizacion</a></li> 
-      <li><a href="horarios2.html" class="boton-personalizado"> Horarios</a></li> 
-      <li><a href="historia.html" class="boton-personalizado">Historia</a></li> 
-     <li> <a href="ecological program.html" class="boton-personalizado">Ecological program</a></li>
-     <li> <a href="Servicio.html " class="boton-personalizado">Servicios</a></li>
+      <a href="index.html">Inicio</a>
+      <a href="mision.html">Misión</a>
+      <a href="Trasporte y automatización.html">Transporte y Automatización</a>
+      <a href="horarios2.html">Horarios</a>
+      <a href="historia.html">Historia</a>
+      <a href="ecological program.html">Programa Ecológico</a>
+      <a href="Servicio.html">Servicios</a>
     </nav>
+  </header>
 
-</header>
-
-
-    <center>
-    <h1>Trasurge</h1>
+  <main>
+    <h1>Transurge</h1>
     <h2>Nuestra historia</h2>
-    <p>TRANS URGE NACE CON EL NOMBRE DE HERIBERTO COSS DEL BOSQUE  EN EL AÑO  DE 1988, CON LA COBERTURA DE MONTERREY SALTILLO,  CON LA CAPACIDAD SUFICIENTE DE SATISFACER LAS NECESIDADES DE PAQUETERIA Y MENSAJERIA  A CIENTOS DE CLIENTES DE MANERA RAPIDA, SEGURA Y  EFICIENTE.</p>
+    <p>TRANS URGE nace con el nombre de Heriberto Coss del Bosque en el año de 1988, con la cobertura de Monterrey y Saltillo, con la capacidad suficiente de satisfacer las necesidades de paquetería y mensajería a cientos de clientes de manera rápida, segura y eficiente.</p>
     
-<br>
-<p>EN EL AÑO DE 1992  SE CONSTITUYE EN LA CIUDAD DE SALTILLO COAH. LA SOCIEDAD ANONIMA DENOMINADA  TRANS URGE,  S. A.  DE  C.V  CON EL MOTIVO DE UBICAR A VARIOS ESTADOS DE LA REGION NORESTE PARA LA ENTREGA DE PAQUETERIA Y MENSAJERIA.  </p>
-<br>
-<p>DADA LA EXPERIENCIA OBTENIDA EN LOS PRIMEROS AÑOS SE LOGRO EL RECONOCIMIENO POR EL MERCADO Y HASTA AHORA SE HA EXTENDIDO HASTA LA REGION OCCIDENTE DE LA REPUBLICA MEXICANA, OFRECIENDO LA MISMA CALIDAD Y SERVICIO.</p>
-<br>
-<img src="imagenes/we.jpg" alt="" width="300">
-<br>
-<br>
-<br>
-<img src="imagenes/se.jpg" alt="" width="300">
-</center>
+    <p>En el año de 1992 se constituye en la ciudad de Saltillo, Coahuila, la sociedad anónima denominada TRANS URGE, S.A. de C.V. con el motivo de ubicar a varios estados de la región noreste para la entrega de paquetería y mensajería.</p>
+    
+    <p>Dada la experiencia obtenida en los primeros años, se logró el reconocimiento por el mercado y hasta ahora se ha extendido hasta la región occidente de la República Mexicana, ofreciendo la misma calidad y servicio.</p>
+
+    
+  </main>
+
 </body>
+</html>

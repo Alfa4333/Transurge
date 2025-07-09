@@ -1,132 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mision y vicion </title>
-    <style>
-    body{
-        background-color: yellow;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Misión y Visión</title>
+  <style>
+    :root {
+      --azul-oscuro: #002b7f;
+      --azul-claro: #009de0;
+      --fondo-claro: #ffffff;
     }
 
-*{
-			margin: 0;
-               padding: 1px;
-               font-family: 'Varela Round', sans-serif;
-          }
+    body {
+      background-color: var(--fondo-claro);
+      color: #000000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-              header{
-               display: flex;
-               justify-content: space-around;
-               align-items: center;
-               padding: 10px 0px;
-               border-bottom:  1px solid rgb(12, 12, 14);
-               bottom: 100px;
+    header {
+      background-color: var(--azul-oscuro);
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+    }
 
-          }
+    .logo {
+      width: 200px;
+    }
 
-          li{
-               display: inline-block;
-               padding:  0px 20px;
-               list-style: none;
-     
-          }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
 
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: var(--azul-claro);
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
 
-          .logo{
-               width: 300px;
-               cursor: pointer;
-               
+    nav a:hover {
+      background-color: #006fa1;
+    }
 
-          }
-          a{
-               font-size: 14px;
-               text-decoration: none;
-               text-transform: 700;
-               color: rgb(15, 14, 14);
-               
-          }
-          .btn{
-               padding: 10px 25px;
-               background-color: aqua;
-                background-color: #d84444;
-               color: white;
-               box-shadow: 0 4px 10px rgba(20, 19, 19, 0.1);
-              
-          }
-         .boton-personalizado:hover {
-               background-color: #6d696a;
-                letter-spacing: 1px;
-                border-radius: 5px;
-               box-shadow: 0px 4px 8px 3px rgba(115, 114, 121, 0.5);
-                transition: background-color 2s;
-                 box-shadow: 0px 4px 10px;
-          }
-             body {
-      background-color: yellow;
-      color: black;
-      font-family: Arial, sans-serif;
+    main {
+      max-width: 900px;
+      margin: 40px auto;
       padding: 20px;
-    }
-
-    h1 {
       text-align: center;
     }
 
+    h1 {
+      color: var(--azul-oscuro);
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      border-bottom: 2px solid var(--azul-claro);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    h2 {
+      color: var(--azul-claro);
+      font-size: 1.8em;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
     p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: justify;
+      margin: 0 auto 20px auto;
+      padding: 0 15px;
+      max-width: 800px;
       text-transform: lowercase;
     }
 
     p::first-letter {
       text-transform: uppercase;
     }
-          
-    .hero{
-      background: linear-gradient(to right, #f3f3f0, #fafaef);
-  color: rgb(19, 18, 18);
-  padding: 89px 0;
-  text-align: center;
-}
-          
-</style>
 
+    @media (max-width: 600px) {
+      .logo {
+        width: 150px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<header>
-      <section id="inicio" class="hero">
-
-   <img src="imagenes/convert.png" alt="" class="logo">
-
+  <header>
+    <img src="imagenes/convert.png" alt="Logo Transurge" class="logo">
     <nav>
-      <li><a href="index.html" class="boton-personalizado">Pagina principal</a></li> 
-      <li><a href="mision.html" class="boton-personalizado">Mision</a></li> 
-      <li><a href="Trasporte y automatización.html" class="boton-personalizado">trasporte y automatizacion</a></li> 
-      <li><a href="horarios2.html" class="boton-personalizado"> Horarios</a></li> 
-      <li><a href="historia.html" class="boton-personalizado">Historia</a></li> 
-        <li> <a href="ecological program.html" class="boton-personalizado">Ecological program</a></li>
-        <li> <a href="Servicio.html " class="boton-personalizado">Servicios</a></li>
+      <a href="index.html">Inicio</a>
+      <a href="mision.html">Misión</a>
+      <a href="Trasporte y automatización.html">Transporte y Automatización</a>
+      <a href="horarios2.html">Horarios</a>
+      <a href="historia.html">Historia</a>
+      <a href="ecological program.html">Programa Ecológico</a>
+      <a href="Servicio.html">Servicios</a>
     </nav>
-</section>
-</header>
-<center>
-    <h1>Mision </h1>
-    <p>SER LIDER EN EL MERCADO TRABAJANDO CON HONRADEZ Y CON EL COMPROMISO   DE  OFRECER A NUESTROS CLIENTES LA ENTREGA RAPIDA Y OPORTUNA DE SUS ENVIOS </p>
-    <br>
-    <br>
-    <h1>Vision </h1>
-    <p>SER UNA EMPRESA DE MENSAJERIA Y PAQUETERIA  EFICIENTE E INNOVADORA CUIDANDO SIEMPRE LA SEGURIDAD DE SUS ENVIOS Y BRINDAR LA CALIDAD EN EL SERVICIO QUE SE MERECE EL CLIENTE, CONTANDO CON EL PERSONAL ALTAMENTE CALIFICADO</p>
-   <br>
-   <br>
-    <h2>Politica de calidad </h2>
-   
-    <p>LOGRAR LA SATISFACCION DE LOS CLIENTES CON EL SERVICIO  QUE SE OFRECE, CON UN VALOR AGREGADO Y QUE EXEDAN SUS EXPECTATIVAS, MEJORANDO CONTINUAMENTE NUESTRA ORGANIZACIÓN Y DE ESTA MANERA GENERAR BENEFICIOS.</p>
-    <br>
-    <br>
+  </header>
+
+  <main>
+    <h1>Misión</h1>
+    <p>Ser líder en el mercado trabajando con honradez y con el compromiso de ofrecer a nuestros clientes la entrega rápida y oportuna de sus envíos.</p>
+
+    <h1>Visión</h1>
+    <p>Ser una empresa de mensajería y paquetería eficiente e innovadora, cuidando siempre la seguridad de sus envíos y brindar la calidad en el servicio que se merece el cliente, contando con el personal altamente calificado.</p>
+
+    <h2>Política de calidad</h2>
+    <p>Lograr la satisfacción de los clientes con el servicio que se ofrece, con un valor agregado que exceda sus expectativas, mejorando continuamente nuestra organización y de esta manera generar beneficios.</p>
+
     <h2>Valores de la empresa</h2>
-    <p>EL RESPETO, LA RESPONSABILIDAD Y LA HONRADEZ SON LOS VALORES COMUNES CON LOS QUE EL PERSONAL SE DESEMPEÑA EN NUESTRA EMPRESA TRANSURGE</p>
-    <br>
-    <br>
-   </center>
+    <p>El respeto, la responsabilidad y la honradez son los valores comunes con los que el personal se desempeña en nuestra empresa Transurge.</p>
+  </main>
+
 </body>
 </html>

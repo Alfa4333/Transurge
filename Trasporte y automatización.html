@@ -1,159 +1,197 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transporte</title>
-    <style>
-        body{
-            background-color: yellow;
-        }
-    table{
-            margin: auto;
-            margin-top: 90px;
-            text-align: center;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 20px;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transporte y Automatización</title>
+  <style>
+    :root {
+      --azul-oscuro: #002b7f;
+      --azul-claro: #009de0;
+      --fondo-claro: #ffffff;
+    }
 
-            border-collapse: collapse;
-        
-        }
-         table th, table ,tr,td{
-            border: 5px solid rgb(11, 12, 12);
-            padding: 5px 10px;
-            background-color: white        }
-        table th,
-        table td:first-child{
-        background-color: rgb(214, 236, 11);
-        color: rgb(26, 23, 23);
-        width: 100px;
-        font-weight: 400;
-        }
+    body {
+      background-color: var(--fondo-claro);
+      color: #000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-        *{
-			margin: 0;
-               padding: 1px;
-               font-family: 'Varela Round', sans-serif;
-          }
+    header {
+      background-color: var(--azul-oscuro);
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+    }
 
-              header{
-               display: flex;
-               justify-content: space-around;
-               align-items: center;
-               padding: 10px 0px;
-               border-bottom:  1px solid rgb(12, 12, 14);
-               bottom: 100px;
+    .logo {
+      width: 200px;
+    }
 
-          }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
 
-          li{
-               display: inline-block;
-               padding:  0px 20px;
-               list-style: none;
-     
-          }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: var(--azul-claro);
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
 
+    nav a:hover {
+      background-color: #006fa1;
+    }
 
-          .logo{
-               width: 300px;
-               cursor: pointer;
-               
+    h1, h2, h3, h4 {
+      text-align: center;
+      margin-top: 30px;
+    }
 
-          }
-          a{
-               font-size: 14px;
-               text-decoration: none;
-               text-transform: 700;
-               color: rgb(15, 14, 14);
-               
-          }
-          .btn{
-               padding: 10px 25px;
-               background-color: aqua;
-                background-color: #d84444;
-               color: white;
-               box-shadow: 0 4px 10px rgba(20, 19, 19, 0.1);
-              
-          }
-         .boton-personalizado:hover {
-               background-color: #6d696a;
-                letter-spacing: 1px;
-                border-radius: 5px;
-               box-shadow: 0px 4px 8px 3px rgba(115, 114, 121, 0.5);
-                transition: background-color 2s;
-                 box-shadow: 0px 4px 10px;
-          }
-        </style>
+    h1 {
+      color: var(--azul-oscuro);
+      font-size: 2.5em;
+      border-bottom: 2px solid var(--azul-claro);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    table {
+      width: 90%;
+      margin: 40px auto;
+      border-collapse: collapse;
+      font-size: 1em;
+    }
+
+    table, th, td {
+      border: 2px solid #ccc;
+    }
+
+    th {
+      background-color: var(--azul-claro);
+      color: white;
+      padding: 12px;
+    }
+
+    td {
+      background-color: #f9f9f9;
+      padding: 10px;
+      text-align: center;
+    }
+
+    td img {
+      width: 100px;
+      margin-top: 5px;
+    }
+
+    p {
+      max-width: 900px;
+      margin: 10px auto;
+      text-align: justify;
+      padding: 0 15px;
+      text-transform: lowercase;
+    }
+
+    p::first-letter {
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        width: 150px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      table, th, td {
+        font-size: 0.9em;
+      }
+
+      td img {
+        width: 80px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-   <img src="imagenes/convert.png" alt="" class="logo">
 
+  <header>
+    <img src="imagenes/convert.png" alt="Logo Transurge" class="logo">
     <nav>
-      <li><a href="index.html" class="boton-personalizado">Pagina principal</a></li> 
-      <li><a href="mision.html" class="boton-personalizado">Mision</a></li> 
-      <li><a href="Trasporte y automatización.html" class="boton-personalizado">trasporte y automatizacion</a></li> 
-      <li><a href="horarios2.html" class="boton-personalizado"> Horarios</a></li> 
-      <li><a href="historia.html" class="boton-personalizado">Historia</a></li>
-      <li> <a href="Servicio.html " class="boton-personalizado">Servicios</a></li> 
-
+      <a href="index.html">Inicio</a>
+      <a href="mision.html">Misión</a>
+      <a href="Trasporte y automatización.html">Transporte</a>
+      <a href="horarios2.html">Horarios</a>
+      <a href="historia.html">Historia</a>
+      <a href="Servicio.html">Servicios</a>
     </nav>
+  </header>
 
-</header>
+  <main>
+    <h1>Transporte y Automatización</h1>
+    <p>Son parte de nuestro plan de *ecology project* que fomenta nuestra participación en la lucha por cero contaminación y el aire limpio.</p>
 
-
-    <h1>Trasporte y automatización</h1>
-    <p>Son parte de nuestroplan de ecology project que fomenta nuestra participacion en la  lucha de 0 contaminacion y la limpiesa de aire</p>
     <table>
-        <thead>
-            <tr>
-                <th>tipos de Transporte</th>
-                <th>Conbustian del Transporte</th>
-                <th>Daño al ambiente</th>
-                <th>imagen del trasporte</th>
-                <th>Cantidad de trasportes</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>camion</td>
-                <td>Tesla Semi</td>
-                <td>0% de daño</td>
-                <td>Tesla Semi <img src="imagenes/images.jpg" alt=""></td>
-                <td>2</td>
-            </tr>
-        </tbody>
-        <tbody>
-            <tr>
-            <td>camioneta de reparto</td>
-            <td>Ford E-Transit</td>
-            <td>0% de daño</td>
-            <td>Ford E-Transit <img src="imagenes/ca.jpg" alt=""></td>
-            <td>4</td>
-            </tr>
-        </tbody>
+      <thead>
+        <tr>
+          <th>Tipo de Transporte</th>
+          <th>Combustible</th>
+          <th>Daño Ambiental</th>
+          <th>Imagen</th>
+          <th>Cantidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Camión</td>
+          <td>Tesla Semi</td>
+          <td>0% de daño</td>
+          <td><img src="imagenes/images.jpg" alt="Tesla Semi"></td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Camioneta de reparto</td>
+          <td>Ford E-Transit</td>
+          <td>0% de daño</td>
+          <td><img src="imagenes/ca.jpg" alt="Ford E-Transit"></td>
+          <td>4</td>
+        </tr>
+      </tbody>
     </table>
-    <center>
+
     <h2>Automatización</h2>
+
     <h3>1. Automatización en Recepción y Registro</h3>
-    <p>1.1-Escaneo de códigos de barras o QR: Para registrar rápidamente cada paquete que llega.</p>
-    <br>
-    <p>1.2-Lectores RFID: Para identificar paquetes sin contacto directo.</p>
-    <br>
-    <p>1.3-Sistemas de gestión de inventario automatizados: Para registrar la entrada de paquetes en tiempo real</p>
-    <br>
-    <p>1.4-Rastreo de guias</p>
-    <br>
+    <p>1.1 Escaneo de códigos de barras o QR para registrar rápidamente cada paquete que llega.</p>
+    <p>1.2 Lectores RFID para identificar paquetes sin contacto directo.</p>
+    <p>1.3 Sistemas de gestión de inventario automatizados para registrar entradas en tiempo real.</p>
+    <p>1.4 Rastreo de guías.</p>
+
     <h4>2. Clasificación Automática de Paquetes</h4>
     <p>Cintas transportadoras inteligentes con sensores y brazos robóticos que:</p>
-    <br>
     <p>Detectan tamaño y peso.</p>
-    <br>
     <p>Clasifican automáticamente según destino.</p>
-    <br>
     <p>Software de ruteo que determina el trayecto más eficiente desde el centro de distribución.</p>
-    </center>
-    
+  </main>
+
 </body>
 </html>

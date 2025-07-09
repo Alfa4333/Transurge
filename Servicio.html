@@ -1,167 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios </title>
-    <style>
-        body{
-            background-color: rgb(238, 215, 5);
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servicios</title>
+  <style>
+    :root {
+      --azul-oscuro: #002b7f;
+      --azul-claro: #009de0;
+      --fondo-claro: #ffffff;
+    }
 
-*{
-			margin: 0;
-               padding: 1px;
-               font-family: 'Varela Round', sans-serif;
-          }
+    body {
+      background-color: var(--fondo-claro);
+      color: #000000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-              header{
-               display: flex;
-               justify-content: space-around;
-               align-items: center;
-               padding: 10px 0px;
-               border-bottom:  1px solid rgb(12, 12, 14);
-               bottom: 100px;
+    header {
+      background-color: var(--azul-oscuro);
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+    }
 
-          }
+    .logo {
+      width: 200px;
+    }
 
-          li{
-               display: inline-block;
-               padding:  0px 20px;
-               list-style: none;
-     
-          }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
 
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: var(--azul-claro);
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
 
-          .logo{
-               width: 300px;
-               cursor: pointer;
-               border-bottom: 2px solid #000;
-               
+    nav a:hover {
+      background-color: #006fa1;
+    }
 
-          }
-          a{
-               font-size: 14px;
-               text-decoration: none;
-               text-transform: 700;
-               color: rgb(15, 14, 14);
-               
-          }
-          .btn{
-               padding: 10px 25px;
-               background-color: aqua;
-                background-color: #d84444;
-               color: white;
-               box-shadow: 0 4px 10px rgba(20, 19, 19, 0.1);
-              
-          }
-         .boton-personalizado:hover {
-               background-color: #c4bfc0;
-                letter-spacing: 1px;
-                border-radius: 5px;
-               box-shadow: 0px 4px 8px 3px rgba(228, 227, 231, 0.5);
-                transition: background-color 2s;
-                 box-shadow: 0px 4px 10px;
-          }
-                                    /* General */
-                body {
-                background-color: #fff200;
-                color: #000000;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                margin: 0;
-                padding: 0;
-                line-height: 1.6;
-                }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
 
-                /* Encabezados */
-                 h2 {
-                color: #000000;
-                text-align: center;
-                margin-top: 30px;
-                margin-bottom: 10px;
-                }
+    h2 {
+      color: var(--azul-claro);
+      text-align: center;
+      font-size: 1.8em;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
 
-            
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: justify;
+      margin: 0 auto 20px auto;
+      padding: 0 15px;
+      max-width: 800px;
+      text-transform: lowercase;
+    }
 
-                h2 {
-                font-size: 26px;
-                font-weight: bold;
-                color: #000000;
-                }
+    p::first-letter {
+      text-transform: uppercase;
+    }
 
-                /* Párrafos */
-                p {
-                max-width: 900px;
-                margin: 0 auto 20px auto;
-                text-align: justify;
-                padding: 0 15px;
-                text-transform: lowercase;
-                }
+    @media (max-width: 600px) {
+      .logo {
+        width: 150px;
+      }
 
-                p::first-letter {
-                text-transform: uppercase;
-                }
+      nav {
+        flex-direction: column;
+        gap: 5px;
+      }
 
+      h2 {
+        font-size: 1.5em;
+      }
 
-
-                nav a {
-                color: #000000;
-                text-decoration: none;
-                font-weight: bold;
-                transition: color 0.3s;
-                }
-
-                nav a:hover {
-                color: #f26522;
-                }
-
-                /* Logo */
-                .logo {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-                }
-    </style>
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
-<header>
-    <img src="imagenes/convert.png" alt="" width="300px">
-     <nav>
-    <li><a href="index.html" class="boton-personalizado">Pagina principal</a></li> 
-    <li><a href="mision.html" class="boton-personalizado">Mision</a></li> 
-    <li><a href="Trasporte y automatización.html" class="boton-personalizado">trasporte y automatizacion</a></li> 
-    <li><a href="horarios2.html" class="boton-personalizado"> Horarios</a></li> 
-    <li><a href="historia.html" class="boton-personalizado">Historia</a></li> 
-    <li> <a href="ecological program.html" class="boton-personalizado">Ecological program</a></li>
-    <li> <a href="Servicio.html " class="boton-personalizado">Servicios</a></li>
+
+  <header>
+    <img src="imagenes/convert.png" alt="Logo Transurge" class="logo">
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="mision.html">Misión</a>
+      <a href="Trasporte y automatización.html">Transporte y Automatización</a>
+      <a href="horarios2.html">Horarios</a>
+      <a href="historia.html">Historia</a>
+      <a href="ecological program.html">Programa Ecológico</a>
+      <a href="Servicio.html">Servicios</a>
     </nav>
-    <hr>
-</header>
+  </header>
 
-    <center>
-    <h2>SISTEMA POR COBRAR</h2>
+  <main>
+    <h2>Sistema por cobrar</h2>
     <p>Consiste en que la persona que remite manda su mercancía por cobrar a su destino.</p>
-    <br>
-    <h2>SISTEMA DE GUIAS POR RELACION</h2>
-    <p>Consiste en hacer una evaluación de cliente para la (empresa) ya que este tipo de guía es a crédito solo para los clientes frecuentes que envían y reciben mercancía mas de 4 veces a ala semana y se da un precio especial.
-    Como otro servicio especial que contamos en transurge es llevar tu mercancía de
-    MTY- SALTILLO .SALTILLO-MTY entrega el mismo día. Siempre y cuando la recepción del envió sea antes de las 13:30pm  horas  en MTY y en Saltillo a las 12:00 pm horas.</p>
-    <br>
-    <h2>SISTEMA DE GUIAS PAGADAS</h2>
-    <p>Consiste en que la persona que remite la mensajería o paquetería, paga en oficina el envió a su destino.</p>
-    <br>
-    <h2>SISTEMA DE GUIAS PRE PAGADAS (PAGADO POR ANTICIPADO)</h2>
-    <p>Consiste en la compra de 100 guías como mínimo dependiendo el destino de la mercancía. Estas serán liquidadas de forma inmediata.
-Mismas que podrán ser utilizadas en una caja de 35cm x 35cm x 35cm como medidas máximas. Es decir cada guía podrá ser utilizada por una caja cuyo peso no deberá exceder más de 30kg.  Con la observación de que las guías podrán ser usadas solo para aquellos destinos que se autoricen.</p>
-    </center>
 
+    <h2>Sistema de guías por relación</h2>
+    <p>Consiste en hacer una evaluación del cliente para la empresa, ya que este tipo de guía es a crédito solo para los clientes frecuentes que envían y reciben mercancía más de 4 veces a la semana. Se ofrece un precio especial.</p>
+    <p>También ofrecemos el servicio especial de entrega el mismo día para envíos entre MTY-SALTILLO y SALTILLO-MTY, siempre que la recepción del envío sea antes de las 13:30 hrs en MTY y antes de las 12:00 hrs en Saltillo.</p>
 
+    <h2>Sistema de guías pagadas</h2>
+    <p>Consiste en que la persona que remite la mensajería o paquetería paga en oficina el envío a su destino.</p>
 
+    <h2>Sistema de guías prepagadas (pagado por anticipado)</h2>
+    <p>Consiste en la compra mínima de 100 guías, dependiendo del destino de la mercancía. Estas serán liquidadas de forma inmediata.</p>
+    <p>Podrán utilizarse para una caja de 35x35x35cm como máximo y un peso que no exceda los 30kg. Estas guías solo podrán usarse en los destinos autorizados.</p>
+  </main>
 
-
-
-
-    
 </body>
 </html>
