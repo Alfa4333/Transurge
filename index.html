@@ -3,101 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trans Urge</title>
-  
-  <!-- Google Font for a clean, modern look -->
+  <title>Trans Urge</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* ─── Color Palette extracted from the logo ─────────────────────────────── */
     :root {
-      --primary-dark: #003b8e; /* Deep navy from the shaded face */
-      --primary:       #0057d9; /* Mid‑blue from the top face  */
-      --primary-light: #1e8fff; /* Accent blue from tagline    */
-      --accent:        #00b4ff; /* Bright cyan for call‑to‑action */
-      --text:          #0f1a2b; /* Near‑black for body text    */
-      --bg:            #f5f9ff; /* Very light blue background  */
+      --primary-dark: #003b8e;
+      --primary:       #0057d9;
+      --primary-light: #1e8fff;
+      --accent:        #00b4ff;
+      --text:          #0f1a2b;
+      --bg:            #f5f9ff;
     }
 
-    /* ─── Global Reset & Typography ────────────────────────────────────────── */
-    *,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
-      background: var(--bg);
+      background-color: var(--bg);
       color: var(--text);
-      line-height: 1.6;
-    }
-
-    /* ─── Hero Section ─────────────────────────────────────────────────────── */
-    header.hero {
-      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-      color: #fff;
-      text-align: center;
-      padding: 4rem 1rem;
-    }
-    header.hero img {
-      width: 120px;
-      margin-bottom: 1rem;
-    }
-    header.hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: .5rem;
-      font-weight: 700;
-    }
-    header.hero p {
-      font-size: 1.125rem;
-      letter-spacing: .5px;
-    }
-
-    /* ─── Navigation Buttons ───────────────────────────────────────────────── */
-    main.menu {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
-      align-items: center;
-    }
-    .btn {
-      min-width: 260px;
-      background: var(--accent);
-      color: #fff;
-      font-weight: 600;
-      text-decoration: none;
-      text-align: center;
-      padding: 1rem 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,.15);
-      transition: transform .2s, box-shadow .2s, background .3s;
-    }
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 16px rgba(0,0,0,.25);
-      background: var(--primary-light);
+      min-height: 100vh;
     }
 
-    /* ─── Footer ───────────────────────────────────────────────────────────── */
-    footer {
+    /* Hero */
+    header.hero {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: white;
       text-align: center;
-      font-size: .875rem;
-      padding: 2rem 1rem;
-      color: #7a8aa1;
+      padding: 3rem 1rem 2rem;
+    }
+
+    header.hero img {
+      max-width: 140px;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    header.hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: .5rem;
+    }
+
+    header.hero p {
+      font-size: 1.1rem;
+      font-weight: 400;
+      opacity: 0.9;
+    }
+
+    /* Main Menu */
+    main.menu {
+      flex: 1;
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      font-weight: 600;
+      padding: 1rem 1.25rem;
+      border-radius: 12px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+      font-size: 1.05rem;
+    }
+
+    .btn:hover {
+      background: var(--primary-light);
+      transform: translateY(-4px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer */
+    footer {
+      background: #e9f1ff;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: .9rem;
+      color: #5a6b87;
+      border-top: 1px solid #cdddf5;
     }
   </style>
 </head>
 <body>
-  <!-- ─── Hero Section with Logo & Tagline ─────────────────────────────────── -->
+
   <header class="hero">
-    <!-- Replace the src with your actual logo path/reference -->
-    <img src="imagenes/tran.jpg" alt="" width="1000">
-    <h1>¡Bienvenido a Trans Urge!</h1>
+    <img src="imagenes/tran.jpg" alt="Logo Trans Urge" width="200" >
+    <h1>¡Bienvenido a Trans Urge!</h1>
     <p>Conectamos personas, no paquetes.</p>
   </header>
 
-  <!-- ─── Navigation Menu ──────────────────────────────────────────────────── -->
   <main class="menu">
     <a href="historia.html"                      class="btn">Nuestra Historia</a>
     <a href="mision.html"                        class="btn">Misión y Visión</a>
@@ -107,9 +120,9 @@
     <a href="Servicio.html"                      class="btn">Servicios</a>
   </main>
 
-  <!-- ─── Footer ───────────────────────────────────────────────────────────── -->
   <footer>
-    &copy; 2025 Trans Urge. Todos los derechos reservados.
+    &copy; 2025 Trans Urge. Todos los derechos reservados.
   </footer>
+
 </body>
 </html>
