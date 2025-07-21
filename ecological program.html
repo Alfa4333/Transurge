@@ -92,25 +92,81 @@
       text-transform: uppercase;
     }
 
-    .imagenes {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .imagenes img {
-      width: 200px;
-      border-radius: 6px;
-      border: 2px solid var(--azul-claro);
-    }
-
     hr {
       border: none;
       border-top: 1px solid #ccc;
       margin: 30px auto;
       max-width: 900px;
+    }
+
+    .caracteristicas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 15px;
+    }
+
+    .card {
+      background-color: var(--gris-suave);
+      border-left: 5px solid var(--azul-claro);
+      padding: 20px;
+      border-radius: 10px;
+      width: 260px;
+      transition: transform 0.3s ease;
+      color: #000;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .embalajes {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    .tarjeta {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--gris-suave);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 157, 224, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .tarjeta:hover {
+      transform: scale(1.02);
+    }
+
+    .tarjeta img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover;
+      border-bottom: 3px solid var(--azul-claro);
+    }
+
+    .tarjeta div {
+      padding: 15px;
+      color: #000;
+    }
+
+    @media (min-width: 700px) {
+      .tarjeta {
+        flex-direction: row;
+      }
+
+      .tarjeta img {
+        width: 220px;
+        height: auto;
+        border-bottom: none;
+        border-right: 3px solid var(--azul-claro);
+      }
     }
   </style>
 </head>
@@ -132,29 +188,60 @@
   <main>
     <h1>¿Qué es un Ecological Program?</h1>
     <p>Un programa ecológico es un conjunto de acciones planificadas y organizadas que tienen como objetivo proteger el medio ambiente, reducir el impacto ambiental de una actividad o sector, y promover la sostenibilidad.</p>
-    
+
     <hr>
 
-    <h2>✅ Características principales</h2>
-    <p>Reducir emisiones, reciclar, ahorrar energía.</p>
-    <p>Dirigir campañas de reciclaje, uso de energías renovables, reforestación.</p>
+    <h2>🌿 Características principales</h2>
+    <div class="caracteristicas">
+      <div class="card">
+        <h3>🌎 Reducción de emisiones</h3>
+        <p>Disminuir los gases contaminantes mediante tecnologías limpias y procesos eficientes.</p>
+      </div>
+      <div class="card">
+        <h3>♻️ Reciclaje</h3>
+        <p>Separar y reutilizar materiales para transformar residuos en nuevos recursos.</p>
+      </div>
+      <div class="card">
+        <h3>💡 Ahorro de energía</h3>
+        <p>Implementar energías renovables y prácticas de bajo consumo en las operaciones.</p>
+      </div>
+    </div>
 
-    <h3>📦 Embalaje Sostenible</h3>
-    <div class="imagenes">
-      <p>Cajas de cartón reciclado o reciclable</p>
-      <img src="imagenes/caja.jpg" alt="Caja reciclada">
+    <hr>
 
-      <p>Sobres compostables o biodegradables: hechos con almidón de maíz, papel reciclado o materiales vegetales.</p>
-      <img src="imagenes/sobres.jpg" alt="Sobres compostables">
+    <h2>📦 Embalaje Sostenible</h2>
+    <div class="embalajes">
+      <div class="tarjeta">
+        <img src="imagenes/cajas.png" alt="Caja reciclada">
+        <div>
+          <h3>Cajas de cartón reciclado</h3>
+          <p>Material reciclado o reciclable que protege el producto y al planeta.</p>
+        </div>
+      </div>
 
-      <p>Cinta adhesiva ecológica: hecha de papel kraft y adhesivo natural.</p>
-      <img src="imagenes/cinta-embalaje-ecologica.jpg" alt="Cinta ecológica">
+      <div class="tarjeta">
+        <img src="imagenes/sobres.png" alt="Sobres compostables">
+        <div>
+          <h3>Sobres compostables</h3>
+          <p>Fabricados con almidón de maíz o papel reciclado, biodegradables naturalmente.</p>
+        </div>
+      </div>
 
-      <p>Relleno ecológico: chips de almidón de maíz (biodegradables).</p>
-      <img src="imagenes/KARTOX-STD-SRO001-GANCHITOS_DE_ALMIDON_BLANCO_l.jpg" alt="Relleno ecológico">
+      <div class="tarjeta">
+        <img src="imagenes/cinta.png" alt="Cinta ecológica">
+        <div>
+          <h3>Cinta adhesiva ecológica</h3>
+          <p>Hecha de papel kraft con adhesivo natural, se degrada sin dañar el entorno.</p>
+        </div>
+      </div>
 
-      <p>Etiquetas y tintas sostenibles: etiquetas de papel reciclado, tintas vegetales o base agua.</p>
-      <img src="imagenes/eti.jpg" alt="Etiquetas sostenibles">
+      <div class="tarjeta">
+        <img src="imagenes/etiquetas.png" alt="Etiquetas sostenibles">
+        <div>
+          <h3>Etiquetas y tintas sostenibles</h3>
+          <p>Etiquetas de papel reciclado y tintas vegetales o a base de agua.</p>
+        </div>
+      </div>
     </div>
   </main>
 
