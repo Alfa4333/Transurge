@@ -104,6 +104,96 @@
       border-top: 1px solid #cdddf5;
       margin-top: auto;
     }
+    #equipo{
+     height: 100vh;
+     display: flex;
+}
+
+.persona{
+     flex-grow: 1;
+     overflow: hidden;
+     position: relative;
+     transition: all 0.5s;
+}
+
+.persona:hover{
+     flex-grow: 3;
+}
+
+.persona-imagen{
+     height: 100%;
+     position: absolute;
+     
+     left:50%;
+     transform: translateX(-50%);
+
+     filter: grayscale(80%);
+}
+
+.persona:hover .persona-imagen{
+     filter: grayscale(0%);
+}
+
+.persona-info{
+     position: absolute;
+     bottom: 10px;
+     width: 100%;
+
+     text-align: center;
+     opacity: 0;
+     transition: all 0.1s;
+}
+
+.persona:hover .persona-info{
+     opacity: 1;
+     bottom: 60px;
+     transition: all 0.3s;
+}
+
+.persona-info h2{
+     font-size:30px;
+     color:rgb(19, 59, 189);
+     font-weight: 600;
+     text-shadow: 2px 2px 3px rgb(253, 247, 247);
+}
+
+.persona-info p{
+     color: var(--color-secundario);  
+
+     font-size: 20px;
+     font-style: italic;
+     font-weight: 700;
+
+     margin-top: 10px;
+     margin-bottom: 20px;
+
+     text-shadow: 2px 2px 3px rgba(250, 248, 248, 0.5);
+}
+
+.persona-info a{
+     display: inline-block;
+
+     width: 40px;
+     height: 40px;
+
+     color: rgb(20, 20, 20);
+     background: var(--color-secundario);
+
+     line-height: 40px;
+     border-radius: 50%;
+
+     margin: 0 5px;
+     font-size: 18px;
+     cursor: pointer;
+     transition: all 0.5s
+}
+
+.social-media a:hover{
+     color: var(--color-secundario);
+     background: transparent;
+     transform: scale(2);
+}
+
   </style>
 </head>
 <body>
@@ -122,6 +212,57 @@
     <a href="ecological program.html"         class="btn">Programa Ecológico</a>
     <a href="Servicio.html"                   class="btn">Servicios</a>
   </main>
+  <br>
+  <br>
+  <center>
+  <section id="equipo">
+          <div class="persona">
+               <img src="imagenes/jefe (1).png" alt="" class="persona-imagen">
+               <div class="persona-info">
+                    <h2>Jesús Alonso</h2>
+                    <p>Director General</p>
+                    <div class="social-media">
+                         <a href=""><span class="fab fa-facebook"></span></a>
+                         <a href=""><span class="fab fa-instagram"></span></a>
+                         <a href=""><span class="fab fa-twitter"></span></a>
+                         <a href=""><span class="fab fa-linkedin-in"></span></a>
+                    </div>
+               </div>
+          </div>
+
+<div class="persona">
+               <img src="imagenes/61dffd00-fc8e-4774-bd96-af9af02e5ccd.jpg" alt="" class="persona-imagen">
+               <div class="persona-info">
+                    <h2>Eliza Smith</h2>
+                    <p>Jefa de administracion </p>
+                    <div class="social-media">
+                         <a href=""><span class="fab fa-facebook"></span></a>
+                         <a href=""><span class="fab fa-instagram"></span></a>
+                         <a href=""><span class="fab fa-twitter"></span></a>
+                         <a href=""><span class="fab fa-linkedin-in"></span></a>
+                    </div>
+
+               </div>
+          </div>
+
+
+
+
+          <div class="persona">
+               <img src="imagenes/hombre (1).png" alt="" class="persona-imagen">
+               <div class="persona-info">
+                    <h2>Eduardo coss</h2>
+                    <p>Jefe de contabilidad </p>
+                    <div class="social-media">
+                         <a href=""><span class="fab fa-facebook"></span></a>
+                         <a href=""><span class="fab fa-instagram"></span></a>
+                         <a href=""><span class="fab fa-twitter"></span></a>
+                         <a href=""><span class="fab fa-linkedin-in"></span></a>
+                    </div>
+
+               </div>
+          </div>
+</center>
 
   <footer>
     &copy; 2025 Trans Urge. Todos los derechos reservados.
